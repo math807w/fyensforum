@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Del din historie | Fyens Forum</title>
+    <meta name="description" content="Den 24. juni 2019 kl. 15.30 åbner ODEON i samarbejde med Historiens Hus dørene op for udstillingen, der hylder Fyens Forum, Odenses største udstillingssted i perioden 1936 til 1978.">
+    <meta property="og:image" content="assets/img/hero_image.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
+    <link rel="stylesheet" href="assets/css/Footer.css">
+    <link rel="stylesheet" href="assets/css/kunstnere-tidslinje-component.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean">
+        <div class="container"><a class="navbar-brand" href="index.html">Fyens Forum&nbsp;<span class="d-block float-right" style="font-weight: 100;color: #76877F;margin-left: 4px;font-size: 16px;margin-top: 5px;">24. jun - 15. aug</span></a><button data-toggle="collapse" class="navbar-toggler"
+                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Hjem</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="udstillingen.html">Tidslinje</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="kunstnerne.html">Kunstnerne</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="delhistorie.html">Del din historie<i class="icon ion-ios-cloud-upload-outline float-left" style="margin-right: 4px;"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="info.html">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section style="margin: 0 10%;clear: both;">
+            <h2 class="text-center heading-block">Del din historie</h2>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <form id="historie-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col left-col">
+                            <div class="form-input-fields">
+                                <h3 class="fieldset-heading">1: Udfyld dine info</h3>
+                                <p style="margin: 0;">Navn (valgfrit)</p><input class="form-control" type="text" name="navn">
+                                <p style="margin: 16px 0 0 0;">Telefon (valgfrit)</p><input class="form-control" type="text" name="telefon" inputmode="tel" minlength="8">
+                                <p style="margin: 16px 0 0 0;">Email (valgfrit)</p><input class="form-control" type="text" inputmode="email" name="email">
+                                <p style="margin: 16px 0 0 0;">Fortæl hvad der sker</p><textarea class="form-control" name="tekst" required=""></textarea></div>
+                        </div>
+                        <div class="col right-col">
+                            <div class="d-inline-block" id="upload-field"><input class="d-xl-flex justify-content-xl-center" type="file" id="fil-input" name="fileToUpload" accept="image/*, video/*, audio/*" value="Vælg fil">
+                                <h3 class="fieldset-heading">2: Upload dit billede/video</h3><i class="icon ion-ios-cloud-upload-outline d-xl-flex justify-content-xl-center" id="icon-cloud-upload"></i>
+                                <p class="text-center" id="gennemse-filer">Gennemse filer</p>
+                                <p id="upload-klar-besked"></p>
+                                <div class="form-row" id="filtype-ikoner">
+                                    <div class="col d-xl-flex justify-content-xl-center"><i class="fa fa-file-photo-o"></i>
+                                        <p class="text-left"><strong>Billeder</strong><br>JPG, PNG, GIF</p>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-center"><i class="fa fa-file-video-o"></i>
+                                        <p class="text-left" style="float:left;"><strong>Video</strong><br>MOV, MP4, WMV</p>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-center"><i class="fa fa-file-audio-o"></i>
+                                        <p class="text-left"><strong>Lyd</strong><br>M4A, MP3, AAC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col left-col">
+                            <div class="form-input-fields">
+                                <h3 class="fieldset-heading">3: Lad os bruge dit materiale</h3>
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1">Jeg accepterer at mine info og indsendte materiale må bruges som en del af Fyens Forum-sommerudstillingen på ODEON.</label></div>
+                                <div
+                                    class="form-check" style="margin-top: 16px;"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Jeg accepterer at mine info og indsendte materiale må indsamles, registreres og bevares af Historiens Hus / Odense Stadsarkiv.&nbsp;</label></div>
+                        </div>
+                    </div>
+                    <div class="col right-col">
+                        <div class="d-xl-flex align-items-xl-center form-input-fields" style="height: 100%;">
+                            <h3 class="fieldset-heading">4: Del din historie</h3><button class="btn btn-primary d-xl-flex justify-content-xl-center" id="del-historie-knap" type="submit" name="submit">Indsend historie</button></div>
+                    </div>
+                </div>
+                </div>
+                <div id="terms-wrapper">
+                    <div class="form-row d-xl-flex justify-content-xl-center"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4>Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="kunstnerne.html" style="font-size: 17px;">Kunstnerne</a></li>
+                        <li><a href="info.html" style="font-size: 17px;">Information</a></li>
+                        <li><a href="delhistorie.html" style="font-size: 17px;">Del din historie</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4>Odeon</h4>
+                    <p style="font-size: 17px;">Odeons Kvarter 1<br>5000 Odense C<br></p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3" style="background-size: cover;background-repeat: no-repeat;background-position: center;background-image: url(&quot;assets/img/historiens_hus.png&quot;);">
+                    <ul class="footer-links"></ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3" style="background-position: center;background-size: contain;background-repeat: no-repeat;background-image: url(&quot;assets/img/Odeon_Logo2015_RGB_Main.png&quot;);">
+                    <ul class="footer-links"></ul>
+                </div>
+            </div>
+            <hr>
+        </div><script language='javascript'>
+   /*
+    const selectedFile = document.getElementById('fil-input').files[0].name;
+    alert(selectedFile);
+    
+    
+    function myFunction(val) {
+     alert("The input value has changed. The new value is: " + val);
+      }
+    */
+    var fileInput = document.getElementById('fil-input'),
+        besked = document.getElementById('upload-klar-besked');
+        fileInput.addEventListener("change", upload_besked);
+    
+    function upload_besked() {
+        besked.style.opacity = '1';
+          // Use a regular expression to pull the file name only
+        var fileName = fileInput.value.split(/(\\|\/)/g).pop();
+        besked.innerHTML = "Filen ''" + fileName + "'' er klar til upload!";
+    }
+    
+    /* document.getElementById('fil-input') */
+</script></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
